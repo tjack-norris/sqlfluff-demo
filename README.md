@@ -204,3 +204,7 @@ Your workspace settings file may now look something like this:
 You have specified where you additional configuration can be found, when the linter should run in your IDE (`onType`) and what dialect it should lint for.
 
 To test this, open or create a SQL file in VS Code in the Workspace where you have set up sqlfluff. Write in an obvious error or rule violation in it and save it. VS Code should now be highlighting all errors it finds.
+
+## 7. Exclude files from linting
+
+You can configure sqlfluff to ingore files by creating a [.sqlfluffignore](https://docs.sqlfluff.com/en/0.5.4/configuration.html#sqlfluffignore) file in the appropriate directory.
