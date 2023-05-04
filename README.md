@@ -1,10 +1,13 @@
 # sqlfluff-demo
 
 ## Resources
+### Docs
 - [venv](https://docs.python.org/3/library/venv.html)
 - pip
 - [sqlfluff](https://docs.sqlfluff.com/en/stable/gettingstarted.html)
 - VS Code
+### Videos
+- [Presenting: SQLFluff](https://www.youtube.com/watch?v=veYB9uh0RCM)
 
 ## 1. Clone this repo (optional)
 
