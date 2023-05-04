@@ -211,3 +211,13 @@ To test this, open or create a SQL file in VS Code in the Workspace where you ha
 ## 7. Exclude files from linting
 
 You can configure sqlfluff to ingore files by creating a [.sqlfluffignore](https://docs.sqlfluff.com/en/0.5.4/configuration.html#sqlfluffignore) file in the appropriate directory.
+
+## 8. Parse files using Jinja templates
+
+We can generate parsed version of SQL files where we use Jinja templating using sqlfluff, for example:
+
+```
+sqlfluff parse models/file_unlinted_jinja.sql --write-output file_parsed_jinja.sql
+```
+
+This SQL can then be run against the target database. There is a separate package for dbt templating specifically, called [sqlfluff-templater-dbt](https://docs.sqlfluff.com/en/0.6.3/configuration.html#jinja-templating-configuration)
