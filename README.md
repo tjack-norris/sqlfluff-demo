@@ -44,7 +44,7 @@ Oops! You need to specify a SQL dialect in the command (unless you have a stored
 We will use the `bigquery` dialect in this repository.
 
 ```
-sqlfluff lint models/model_.sql --d bigquery
+sqlfluff lint models/model_.sql -d bigquery
 ```
 Now, sqlfluff responds with all the cases where the file violates a [Rule](https://docs.sqlfluff.com/en/stable/rules.html) (they have default definitions):
 ```
